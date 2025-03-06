@@ -1,0 +1,29 @@
+body{
+    background-color: white;
+}
+.judul{
+    color: #15B7B9;
+    padding-left: 50px;
+    
+}
+#judul1{
+    font-size: 90px;
+    margin-bottom: 1px;
+}
+#judul2{
+    font-size: 30px;
+    margin-top: 1px;
+}
+.login{
+    text-align: center;
+}
+
+.text_form{
+    color: #6160c5;
+}
+
+.form{
+    box-shadow: black;
+    padding: 5px;
+
+}
