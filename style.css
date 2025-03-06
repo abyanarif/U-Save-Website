@@ -1,18 +1,35 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Monstserrat';
+    src: url('assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+
 body{
     background-color: white;
 }
 .judul{
-    color: #15B7B9;
+    color: white;
     padding-left: 50px;
     
 }
 #judul1{
     font-size: 90px;
     margin-bottom: 1px;
+    font-family: Montserrat;
+    font-weight: bold;
 }
 #judul2{
     font-size: 30px;
     margin-top: 1px;
+    font-family: Montserrat;
+    font-weight: normal;
 }
 .login{
     text-align: center;
@@ -26,4 +43,18 @@ body{
     box-shadow: black;
     padding: 5px;
 
+}
+
+#keterangan{
+    width: 350px; /* Lebar maksimal paragraf */
+    word-wrap: break-word; /* Memastikan kata panjang terpecah */
+    overflow-wrap: break-word; /* Alternatif untuk kata panjang */
+    margin-left: 50px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: white;
+}
+
+#body_main{
+    background-color: #15B7B9;
 }
