@@ -12,13 +12,13 @@
 
 
 body{
-    width : 1440px;
+    width : 100%;
     margin: 0 auto;
-    height: 1024px;
-    overflow: hidden;
-    background-image: url('assets/images/background.png');
+    height: 100vh;
+    background-image: url('assets/images/background2.png');
     background-size: cover;
-    background-repeat: center;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 
 .judul{
@@ -28,16 +28,27 @@ body{
 }
 #judul1{
     font-size: 90px;
+    margin-top: 100px;
     margin-bottom: 1px;
+    margin-left: 20px;
     font-family: Montserrat;
     font-weight: bold;
 }
 #judul2{
     font-size: 30px;
     margin-top: 1px;
+    margin-left: 20px;
     font-family: Montserrat;
     font-weight: normal;
 }
+
+.garis-bawah {
+    width: 30%;
+    height: 2px;
+    background-color: #15B7B9;
+    margin-left: 70px;
+}
+
 .login{
     text-align: center;
 }
@@ -56,7 +67,8 @@ body{
     width: 350px; /* Lebar maksimal paragraf */
     word-wrap: break-word; /* Memastikan kata panjang terpecah */
     overflow-wrap: break-word; /* Alternatif untuk kata panjang */
-    margin-left: 50px;
+    margin-top: 20px;
+    margin-left: 70px;
     font-family: Montserrat;
     font-weight: bold;
     color: #15B7B9;
@@ -64,4 +76,71 @@ body{
 
 #body_main{
     background-color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 20px;
+    margin-right: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #15B7B9;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.search-icon i{
+    font-size: 20px;
+    color: #15B7B9;
+    margin-right: 50px;
+}
+
+.search-icon i:hover{
+    color: darkcyan;
+}
+
+.button-container{
+    text-align: left;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.button {
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+    margin: 5px;
+}
+
+.get-started{
+    background-color: #15B7B9;
+    color: white;
+}
+
+.sign-up{
+    background-color: white;
+    color: #15B7B9;
+    border: 2px solid #15B7B9;
+}
+
+.get-started:hover, .sign-up:hover{
+    opacity: 0.8;
 }
