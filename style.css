@@ -12,8 +12,15 @@
 
 
 body{
-    background-color: white;
+    width : 1440px;
+    margin: 0 auto;
+    height: 1024px;
+    overflow: hidden;
+    background-image: url('assets/images/background.png');
+    background-size: cover;
+    background-repeat: center;
 }
+
 .judul{
     color: #15B7B9;
     padding-left: 50px;
