@@ -17,7 +17,7 @@
 body{
     width : 100%;
     margin: 0 auto;
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url('assets/images/background2.png');
     background-size: cover;
     background-position: center top;
@@ -31,22 +31,22 @@ body{
 }
 .judul_login{
     color: #15B7B9;
-    text-align: justify;
     justify-content: center;
+    text-align: center;
 }
 #judul1{
     font-size: 90px;
     margin-top: 100px;
     margin-bottom: 1px;
     margin-left: 20px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-weight: bold;
 }
 #judul2{
     font-size: 30px;
     margin-top: 1px;
     margin-left: 20px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-weight: normal;
 }
 
@@ -58,8 +58,8 @@ body{
 }
 
 #judul_login{
-    font-size: 50px;
-    margin-top: 1px;
+    font-size: 60px;
+    margin-bottom: 1px;
     font-family: Montserrat;
     font-weight: lighter;
 }
@@ -71,9 +71,6 @@ body{
     font-weight: normal;
 }
 
-.text_form{
-    color: #6160c5;
-}
 
 .form{
     box-shadow: black;
@@ -96,34 +93,7 @@ body{
     background-color: white;
 }
 
-.navbar{
-    display: flex;
-    position: fixed;
-    justify-content: flex-end;
-    align-items: center;
-    /* padding: 20px 20px; */
-    height: 50px;
-    margin-right: 0px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
-    background-color: white;
-}
 
-.nav-links{
-    margin-right: 20px;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a{
-    text-decoration: none;
-    color: #15B7B9;
-    font-family: Montserrat;
-    font-weight: bold;
-}
 
 .search-icon i{
     font-size: 20px;
@@ -162,30 +132,6 @@ body{
     border: 2px solid #15B7B9;
 }
 
-#username,#password{
-    justify-content: center;
-    border: 1px solid #15B7B9;
-    border-radius: 20px;
-    margin-left: 5px;
-    height: 30px;
-    width: 200px;
-    margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.3);
-
-}
-
-
-.login-container {
-    background: rgba(255, 255, 255, 0);
-    margin-top: 80px;
-    padding: 30px;
-    margin-left: 100px;
-    border-radius: 10px;
-    text-align: center;
-    width: 350px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgb;
-}
 .linked_text{
     color: #15B7B9;
     font-family: Montserrat;
@@ -211,8 +157,15 @@ body{
     font-family: Montserrat;
     font-weight: bold;
 }
-/* input {
-    border: none;
-    outline: none;
-    background: transparent;
-} */
+
+.login-container {
+    background: rgba(255, 255, 255, 0);
+    margin-top: 80px;
+    padding: 30px;
+    margin-left: 100px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgb;
+}

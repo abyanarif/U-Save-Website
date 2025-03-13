@@ -5,35 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sign_in.css">
     <title>Login Page</title>
 </head>
 <body id="body_main">
     <div class="login-container">
-        <nav class = "navbar">
-            <div class ="nav-links">
-                <a href="main.html">Home</a>
-                <a href="#">Literasi Keuangan</a>
-                <a href="#">Budgeting</a>
-            </div>
-        </nav>
         <div>
             <h1 class="judul_login" id="judul_login">Welcome!</h1>
             <h3 class="judul_login" id="subjudul_login">Sign In to your Account</h1>
                 <form>
                     <div class="input-group">
                         <i class="fa fa-user"></i>
-                        <input type="text" name="username" id="username" placeholder="Username">
+                        <input type="text" name="username" id="username" placeholder="Username" required>
                     </div>
                     <div class="input-group">
                         <i class="fa fa-lock"></i>
-                        <input type="password" name="password" id="password" placeholder="Password">
+                        <input type="password" name="password" id="password" placeholder="Password" required>
                     </div>
+                    <p>
+                        <a href="#" class="linked_text">Forgot Password?</a>
+                    </p> 
+                    <button type="submit" class="btn">Sign In</button>
                 </form>
             </div>
-        <p>
-            <a href="#" class="linked_text">Forgot Password?</a>
-        </p> 
-        <button type="submit" class="btn">Sign In</button>
         <p class="non_linked_text">Don’t have an account? <a href="#" class="linked_text">Sign Up</a></p>         
     </div>
     <script src="script.js"></script>
