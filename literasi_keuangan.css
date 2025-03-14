@@ -1,15 +1,20 @@
-.fContainer{
+.literasiContainer{
     width : 100%;
     margin: 0;
     padding: 0;
+}
+
+.literasi_utama{
+    display: flex;
+    flex-direction: row;
 }
 
 .keteranganpage{
     width: 350px; 
     word-wrap: break-word; 
     overflow-wrap: break-word; 
-    margin-top: 20px;
-    margin-left: 70px;
+    /* margin-top: 20px;
+    margin-left: 70px; */
     font-family: Montserrat;
     font-weight: bold;
     color: #15B7B9;
@@ -18,8 +23,39 @@
 #keteranganliterasi{
     font-size: 75;
     margin-top: 1px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-family: 'Montserrat';
     font-weight: normal;  
     color: #15B7B9;       
+}
+
+.btn-literasi{
+    height:100px;
+    width: 100px;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.button-container-literasi{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-literasi-atas{
+    padding-bottom: 60px;
+}
+
+.bawah-judul{
+    width: 100%;
+    padding-left: 7px;
 }

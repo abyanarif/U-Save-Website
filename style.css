@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #15B7B9;
+    --secondary-color: #10a5a7;
+    --background-color: white;
+}
+
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
@@ -6,166 +12,166 @@
 }
 
 @font-face {
-    font-family: 'Monstserrat';
+    font-family: 'Montserrat';
     src: url('assets/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
 }
+
 @font-face {
-    font-family: 'Monstserrat';
+    font-family: 'Montserrat';
     src: url('assets/fonts/Montserrat-Light.otf') format('truetype');
     font-weight: lighter;
 }
-body{
-    width : 100%;
-    margin: 0 auto;
-    /* height: 100vh; */
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    color: var(--primary-color);
+}
+
+.background{
     background-image: url('assets/images/background2.png');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
 }
 
-.judul{
-    color: #15B7B9;
-    padding-left: 50px;
-    
+.main-wrapper {
+    display: flex;
+    padding-left: 60px;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    width: 50%;
 }
-.judul_login{
-    color: #15B7B9;
-    justify-content: center;
+
+.login-container {
+    margin-top: auto;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
-#judul1{
+.login-wrapper {
+    margin-top: 0px;
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;   
+}
+
+.judul {
+    color: var(--primary-color);
+    /* padding-left: 50px; */
+}
+
+#judul1 {
     font-size: 90px;
     margin-top: 100px;
-    margin-bottom: 1px;
-    margin-left: 20px;
-    font-family: 'Montserrat';
+    margin-bottom: 0px;
+    padding: 0px;
     font-weight: bold;
 }
-#judul2{
+
+#judul2 {
     font-size: 30px;
-    margin-top: 1px;
-    margin-left: 20px;
-    font-family: 'Montserrat';
+    margin-top: 0px;
+    padding: 0px;
     font-weight: normal;
 }
 
 .garis-bawah {
-    width: 30%;
+    width: 60%;
     height: 2px;
-    background-color: #15B7B9;
-    margin-left: 70px;
+    background-color: var(--primary-color);
+    margin-left: 0px;
 }
 
-#judul_login{
+#judul_login {
     font-size: 60px;
     margin-bottom: 1px;
-    font-family: Montserrat;
     font-weight: lighter;
 }
 
-#subjudul_login{
+#subjudul_login {
     font-size: 15px;
     margin-top: 1px;
-    font-family: Montserrat;
     font-weight: normal;
 }
 
-
-.form{
-    box-shadow: black;
-    padding: 5px;
-
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Pusatkan input dan ikon */
 }
 
-#keterangan{
-    width: 350px; /* Lebar maksimal paragraf */
-    word-wrap: break-word; /* Memastikan kata panjang terpecah */
-    overflow-wrap: break-word; /* Alternatif untuk kata panjang */
-    margin-top: 20px;
-    margin-left: 70px;
-    font-family: Montserrat;
-    font-weight: bold;
-    color: #15B7B9;
+.input-group i {
+    margin-right: 10px;
+    color: var(--primary-color);
 }
 
-#body_main{
-    background-color: white;
+.input-group input {
+    padding: 6px;
+    border: 1px solid var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    width: 80%;
 }
 
-
-
-.search-icon i{
-    font-size: 20px;
-    color: #15B7B9;
-    /* margin-right: 50px; */
-}
-
-.search-icon i:hover{
-    color: darkcyan;
-}
-
-.button-container{
-    text-align: left;
-    margin-left: 60px;
-    margin-top: 30px;
-}
-
-.button {
-    padding: 12px 24px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-    display: inline-block;
-    margin: 5px;
-}
-
-.get-started{
-    background-color: #15B7B9;
-    color: white;
-}
-
-.sign-up{
-    background-color: white;
-    color: #15B7B9;
-    border: 2px solid #15B7B9;
-}
-
-.linked_text{
-    color: #15B7B9;
-    font-family: Montserrat;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.non_linked_text{
-    color: #15B7B9;
-    font-family: Montserrat;
-    font-weight: normal;
-}
-.btn{
+.btn {
     height: 50px;
     width: 180px;
     justify-content: center;
-    background-color: #15B7B9;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
     margin-top: 20px;
-    font-family: Montserrat;
     font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
-.login-container {
-    background: rgba(255, 255, 255, 0);
-    margin-top: 80px;
-    padding: 30px;
-    margin-left: 100px;
-    border-radius: 10px;
-    text-align: center;
-    width: 350px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgb;
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.linked_text {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.non_linked_text {
+    color: var(--primary-color);
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+    }
+
+    #judul1 {
+        font-size: 60px;
+    }
+
+    #judul2 {
+        font-size: 20px;
+    }
 }

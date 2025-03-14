@@ -1,0 +1,20 @@
+#button-signUp{
+    background-color: white;
+    color: var(--primary-color);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+}
+
+
+#button-getStarted{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border: 2px solid white;
+}
