@@ -113,20 +113,23 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center; /* Pusatkan input dan ikon */
+    justify-content: center;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
 }
 
-.input-group i {
+/* .input-group i {
     margin-right: 10px;
     color: var(--primary-color);
-}
+} */
 
 .input-group input {
     padding: 6px;
-    border: 1px solid var(--primary-color);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     width: 80%;
+    border-radius: 20px;
+    border: white;
 }
 
 .btn {
@@ -138,7 +141,6 @@ body {
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
-    margin-top: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
