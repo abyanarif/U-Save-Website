@@ -94,6 +94,7 @@ body {
     height: 2px;
     background-color: var(--primary-color);
     margin-left: 0px;
+    line-height: 2;
 }
 
 #judul_login {
