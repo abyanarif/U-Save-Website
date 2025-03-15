@@ -1,20 +1,89 @@
-#button-signUp{
+html .body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#button-signUp {
     background-color: white;
     color: var(--primary-color);
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    list-style: none;
+}
+
+#button-getStarted {
+    background-color: var(--primary-color);
+    color: white;
     border: 2px solid var(--primary-color);
 }
 
-
-#button-getStarted{
+#button-signUp:hover {
     background-color: var(--primary-color);
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+}
+
+#button-getStarted:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.starter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 70%;
+    padding-bottom: 100px;
+}
+
+.btn-main{
+    color: white;
+    height: 50px;
     border: none;
     cursor: pointer;
-    border: 2px solid var(--primary-color);
+    width: 200px; 
+    height: 40px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border-radius: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    text-align: center;
+    list-style: none;
+}
+
+.judul-main {
+    color: var(--primary-color);
+}
+
+#judul1-main {
+    font-size: 59px;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding: 0px;
+    font-weight: bold;
+}
+
+#judul2-main {
+    font-size: 20px;
+    margin-top: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+
+.garis-bawah-main {
+    width: 60%;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin-left: 0px;
+    line-height: 2;
 }

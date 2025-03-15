@@ -39,15 +39,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.main-wrapper {
-    display: flex;
-    padding-left: 60px;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 100vh;
-    width: 50%;
-}
-
 .login-container {
     margin-top: auto;
     padding: 30px;
