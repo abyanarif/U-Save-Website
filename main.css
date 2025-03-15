@@ -16,5 +16,5 @@
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    border: 2px solid white;
+    border: 2px solid var(--primary-color);
 }
