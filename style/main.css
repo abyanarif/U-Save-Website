@@ -4,6 +4,14 @@ html .body {
     box-sizing: border-box;
 }
 
+#index-background {
+    background: rgba(0, 0, 0, 0.7) url('../assets/images/index.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
 #button-signUp {
     background-color: white;
     color: var(--primary-color);
@@ -62,13 +70,12 @@ html .body {
 }
 
 .judul-main {
-    color: var(--primary-color);
+    color: white;
 }
 
 #judul1-main {
     font-size: 59px;
-    justify-content: center;
-    margin-bottom: 0px;
+    margin-bottom: -19px;
     padding: 0px;
     font-weight: bold;
 }
@@ -81,9 +88,16 @@ html .body {
 }
 
 .garis-bawah-main {
-    width: 60%;
+    width: 40%;
     height: 2px;
-    background-color: var(--primary-color);
+    margin-top: 20px;
+    background-color: white;
     margin-left: 0px;
     line-height: 2;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-wrapper {
+        width: 100%;
+    }
 }

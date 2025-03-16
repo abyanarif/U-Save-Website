@@ -19,7 +19,7 @@
     align-items: center;
     width: 100%;
     height: 65px;
-    background-color: #15B7B9;
+    background-color: white;
     padding-left: 20px;
     padding-right: 20px;
     top: 0;
@@ -29,9 +29,9 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
-    color: white;
+    color: black;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -55,29 +55,29 @@
 
 .navigation > li > a {
     text-decoration: none;
-    color: white;
-    font-size: 1.2em;
+    color: black;
+    font-size: 1em;
     font-weight: 500;
 }
 
 .active {
-    background-color: white;
+    background-color: #15B7B9;
     padding: 12px;
     border-radius: 5px;
 }
 
 #activeText {
-    color: #15B7B9;
+    color: white;
 }
 
 .navigation > li > a:hover {
-    color: lightblue;
+    color: gray;
     transition: all 0.3s ease-in-out;
 }
 
 .menu-icon {
     display: none;
-    color: white;
+    color: black;
     font-size: 27px;
     cursor: pointer;
 }
@@ -92,11 +92,10 @@
         /* display: none; */
         flex-direction: column;
         width: 100%;
-        background-color: #15B7B9;
+        background-color: white;
         top: 0px;
         left: 0;
         padding-right: 0;
-
     }
 
     nav .hidden {
@@ -122,5 +121,6 @@
     }
     nav.wrapper {
         width: 100%;
+        align-items: center;
     }
 }
