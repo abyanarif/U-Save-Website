@@ -1,18 +1,44 @@
+html .body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#signup-background {
+    background: rgba(0, 0, 0, 0.7) url('../assets/images/bg_signin.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
 .sign-up {
     justify-content: center;
     text-align: center;
-    margin-left: 5px;
     height: 30px;
     width: 200px;
     margin-top: 0px;
-
 }
 
-
-.login-container {
-    margin-top: 0px;
+.signup-container {
+    margin-top: auto;
     padding: 30px;
-    margin-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.signup-wrapper {
+    margin-top: 0px;
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;   
+}
+

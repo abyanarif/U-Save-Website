@@ -91,12 +91,14 @@ body {
     font-size: 60px;
     margin-bottom: 1px;
     font-weight: lighter;
+    line-height: 50px;
 }
 
 #subjudul_login {
     font-size: 15px;
     margin-top: 1px;
     font-weight: normal;
+    line-height: 30px;
 }
 
 .input-group {
