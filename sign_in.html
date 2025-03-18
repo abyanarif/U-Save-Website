@@ -6,30 +6,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/sign_in.css">
+    <link rel="stylesheet" href="style/navbar_style.css">
     
     <title>Login Page</title>
 </head>
-<body class="background" id="body_main">
-    <div class="login-container">
-        <div class="login-warapper">
-            <h1 class="judul_login" id="judul_login">Welcome!</h1>
-            <h3 class="judul_login" id="subjudul_login">Sign up your Account</h1>
-                <form action="home.html" method="post">
-                    <div class="input-group">
-                        <i class="fa fa-user"></i>
-                        <input type="text" name="username" id="username" placeholder="Username" required>
-                    </div>
-                    <div class="input-group">
-                        <i class="fa fa-lock"></i>
-                        <input type="password" name="password" id="password" placeholder="Password" required>
-                    </div>
-                    <p>
-                        <a href="#" class="linked_text">Forgot Password?</a>
-                    </p> 
-                    <button type="submit" class="btn">Sign In</button>
-                </form>
-                <p class="non_linked_text">Don’t have an account? <a href="sign_up.html" class="linked_text">Sign Up</a></p>   
-            </div>      
+<body class="background-signIn" id="body_main">
+    <div class="fContainer-login">
+        <nav class="wrapper">
+            <div class="brand">
+                <img src="assets/images/logo.png" alt="logo" class="logo">
+                <div class="namaBrand">U-SAVE</div>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fa-solid fa-list"></i>
+            </div>
+                <ul class="navigation hidden" id="menu-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="literasi_keuangan.html">Literasi Keuangan</a></li>
+                    <li><a href="budgeting.html">Budgeting</a></li>
+                </ul>
+        </nav>
+        <div class="login-container">
+            <div class="login-warapper">
+                <h1 class="judul_login" id="judul_login">Welcome!</h1>
+                <h3 class="judul_login" id="subjudul_login">Sign up your Account</h1>
+                    <form action="home.html" method="post">
+                        <div class="input-group">
+                            <i class="fa fa-user"></i>
+                            <input type="text" name="username" id="username" placeholder="Username" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" name="password" id="password" placeholder="Password" required>
+                        </div>
+                        <p>
+                            <a href="#" class="linked_text">Forgot Password?</a>
+                        </p> 
+                        <button type="submit" class="btn">Sign In</button>
+                    </form>
+                    <p class="non_linked_text">Don’t have an account? <a href="sign_up.html" class="linked_text">Sign Up</a></p>   
+                </div>      
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

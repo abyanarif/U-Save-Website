@@ -1,0 +1,49 @@
+
+.fContainer-budgeting {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#budgeting-nav{
+    box-shadow: 0px 0px 10px 0.2px black;
+}
+
+.garis-bawah-budgeting {
+    width: 60%;
+    height: 2px;
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    margin-left: 0px;
+    line-height: 2;
+}
+
+.budgeting-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    width: 40%;
+    padding-bottom: 100px;
+    margin-left: 20px;
+}
+
+.judul-budgeting {
+    color: var(--primary-color);
+}
+
+#judul1-budgeting {
+    font-size: 59px;
+    margin-bottom: -19px;
+    padding: 0px;
+    font-weight: bold;
+}
+
+#judul2-budgeting {
+    font-size: 20px;
+    margin-top: 0px;
+    padding: 0px;
+    font-weight: normal;
+}

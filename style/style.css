@@ -32,32 +32,20 @@ body {
     color: var(--primary-color);
 }
 
+.fContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .background{
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
 }
 
-.login-container {
-    margin-top: auto;
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-.login-wrapper {
-    margin-top: 0px;
-    display: flex;
-    width: 60%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;   
-}
 
 .judul {
     color: var(--primary-color);
@@ -108,11 +96,6 @@ body {
     border: 2px solid var(--primary-color);
     border-radius: 20px;
 }
-
-/* .input-group i {
-    margin-right: 10px;
-    color: var(--primary-color);
-} */
 
 .input-group input {
     padding: 6px;
