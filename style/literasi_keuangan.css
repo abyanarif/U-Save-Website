@@ -10,7 +10,7 @@
 }
 
 .keteranganpage{
-    width: 350px;
+    width: 21.875em;
     word-wrap: break-word; 
     overflow-wrap: break-word; 
     /* margin-top: 20px;
@@ -22,8 +22,8 @@
 }
 
 #keteranganliterasi{
-    font-size: 50px;
-    margin-top: 1px;
+    font-size: 3.125em;
+    margin-top: 0.0625em;
     /* margin-left: 20px; */
     font-family: 'Montserrat';
     font-weight: bold;  
