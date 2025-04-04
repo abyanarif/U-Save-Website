@@ -41,16 +41,3 @@
   justify-content: center;
   align-items: center;
 }
-#username,
-#password {
-  /* border-radius: 20px; */
-  align-items: center;
-  padding: 10px 15px; /* Padding lebih nyaman */
-  width: 100%; /* Lebar penuh */
-  max-width: 300px; /* Lebar maksimum */
-  font-family: "Montserrat", sans-serif;
-  color: white; /* Warna teks lebih gelap */
-  outline: none; /* Hilangkan outline default */
-  justify-content: center;
-  background: rgba(255, 255, 255, 0); /* Putih dengan transparansi 20% */
-}

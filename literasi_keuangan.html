@@ -1,56 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Belajar Navbar</title>
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="/style/navbar_style.css">
-    <link rel="stylesheet" href="/style/literasi_keuangan.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Navbar</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/style/navbar_style.css" />
+    <link rel="stylesheet" href="/style/literasi_keuangan.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body_literasKeuangan">
     <div class="literasiContainer">
-        <nav class="wrapper">
-            <a href="home.html" style="text-decoration: none;">
-                <div class="brand" >
-                    <img src="assets/images/logo.png" alt="logo" class="logo">
-                    <div class="namaBrand">U-Save</div>
-                </div>
-            </a>
-            <div class="menu-icon" id="menu-icon">
-                <i class="fa-solid fa-list"></i>
-            </div>
-                <ul class="navigation hidden" id="menu-list">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="literasi_keuangan.html"  class="active" id="activeText">Literasi Keuangan</a></li>
-                    <li><a href="budgeting.html">Budgeting</a></li>
-                    <li><a href="">Profile</a></li>
-                </ul>
-        </nav>
-        <div class="literasi_utama">
-            <div class="main-wrapper">
-                <h1 class="judul" id="judul1">U-Save</h1>
-                <div class="bawah-judul">
-                    <h2 class="judul" id="judul2">University Save</h2>
-                    <div class="garis-bawah"></div>
-                    <h3 class="keteranganpage" id="keteranganliterasi">Literasi Keuangan</h3>
-                </div>
-            </div>
-            <div class="button-container-literasi">
-                <div class="btn-literasi-atas">
-                    <a href="#" class="btn-literasi">Pengertian</a>
-                    <a href="#" class="btn-literasi">Tujuan</a>
-                    <a href="#" class="btn-literasi">Manfaat</a>
-                </div>
-                <div class="btn-literasi-bawah">
-                    <a href="#" class="btn-literasi">Dampak</a>
-                    <a href="#" class="btn-literasi">Mengatasi Dampak</a>
-                </div>
-            </div>
+      <nav class="wrapper">
+        <a href="home.html" style="text-decoration: none">
+          <div class="brand">
+            <img src="assets/images/logo.png" alt="logo" class="logo" />
+            <div class="namaBrand">U-Save</div>
+          </div>
+        </a>
+        <div class="menu-icon" id="menu-icon">
+          <i class="fa-solid fa-list"></i>
         </div>
+        <ul class="navigation hidden" id="menu-list">
+          <li><a href="home.html">Home</a></li>
+          <li>
+            <a href="literasi_keuangan.html" class="active" id="activeText"
+              >Literasi Keuangan</a
+            >
+          </li>
+          <li><a href="budgeting.html">Budgeting</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+      <div class="literasi-keuangan-content1">
+        <div class="literasi_utama">
+          <div class="judul-wrapper">
+            <div class="judul-subWrapper">
+              <h1 class="judul-literasi" id="judul1">U-SAVE</h1>
+              <div class="bawah-judul">
+                <h2 class="judul-literasi" id="judul2">University Save</h2>
+                <div class="garis-bawah"></div>
+                <h3 class="keteranganpage" id="keteranganliterasi">
+                  Literasi<br />Keuangan
+                </h3>
+              </div>
+            </div>
+          </div>
+          <img
+            src="assets/images/babi.png"
+            alt="gambar-celengan"
+            class="gambar-babi"
+          />
+        </div>
+        <div class="button-container-literasi">
+          <a href="#literasi" class="btn-literasi"
+            ><div class="button-literasi-wrapper">
+              <img
+                src="assets/images/icon-buku.png"
+                alt="Pengertian"
+                class="icon-literasi"
+              />
+              <p>Pemahaman Dasar Keuangan Pribadi</p>
+            </div></a
+          >
+          <a href="#tabungan" class="btn-literasi"
+            ><div class="button-literasi-wrapper">
+              <img
+                src="assets/images/icon-celengan.png"
+                alt="Tabungan"
+                class="icon-literasi"
+              />
+              <p>Tabungan dan Pinjaman</p>
+            </div></a
+          >
+          <a href="#investasi" class="btn-literasi"
+            ><div class="button-literasi-wrapper">
+              <img
+                src="assets/images/icon-investasi.png"
+                alt="Investasi"
+                class="icon-literasi"
+              />
+              <p>Investasi</p>
+            </div></a
+          >
+          <a href="#asuransi" class="btn-literasi"
+            ><div class="button-literasi-wrapper">
+              <img
+                src="assets/images/icon-id_card.png"
+                alt="Asuransi"
+                class="icon-literasi"
+              />
+              <p>Asuransi</p>
+            </div></a
+          >
+          <a href="#perencanaan" class="btn-literasi"
+            ><div class="button-literasi-wrapper">
+              <img
+                src="assets/images/icon-kalender.png"
+                alt="Perencanaan"
+                class="icon-literasi"
+              />
+              <p>Perencanaan Keuangan Jangka Panjang</p>
+            </div></a
+          >
+        </div>
+      </div>
+      <div></div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
