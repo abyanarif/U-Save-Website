@@ -1,49 +1,651 @@
-
-.fContainer-budgeting {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-#budgeting-nav{
-    box-shadow: 0px 0px 10px 0.2px black;
+.fContainer-budgeting {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+#budgeting-nav {
+  box-shadow: 0px 0px 10px 0.2px black;
 }
 
 .garis-bawah-budgeting {
-    width: 60%;
-    height: 2px;
-    margin-top: 10px;
-    background-color: var(--primary-color);
-    margin-left: 0px;
-    line-height: 2;
+  width: 30%;
+  height: 0.0625em;
+  margin-top: 10px;
+  background-color: var(--primary-color);
+  margin-left: 0px;
+  line-height: 2;
 }
 
-.budgeting-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 100vh;
-    width: 40%;
-    padding-bottom: 100px;
-    margin-left: 20px;
+.budgeting-content1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+  width: 40%;
+  padding-bottom: 100px;
+  margin-left: 20px;
 }
 
 .judul-budgeting {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 #judul1-budgeting {
-    font-size: 59px;
-    margin-bottom: -19px;
-    padding: 0px;
-    font-weight: bold;
+  font-size: 5em;
+  margin-bottom: 0px;
+  padding: 0px;
+  font-weight: bold;
 }
 
 #judul2-budgeting {
-    font-size: 20px;
-    margin-top: 0px;
-    padding: 0px;
-    font-weight: normal;
+  font-size: 1em;
+  margin-top: 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+
+.budgeting-judul h1 {
+  font-size: 10rem;
+}
+
+.budgeting-content1,
+.budgeting-content-button,
+.budgeting-content-buat,
+.budgeting-content-cek {
+  display: flex;
+  width: 100%;
+  padding-top: 4rem;
+}
+
+.budgeting-content-button {
+  min-height: 50vh;
+  justify-content: center;
+}
+
+.button-buat,
+.button-cek {
+  display: flex;
+  height: 18vh;
+  width: 25vh;
+  background-color: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: black 2px solid;
+}
+
+.button-buat:hover,
+.button-cek:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.div-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.budgeting-content-buat {
+  min-height: 100vh;
+}
+
+.budgeting-content-cek {
+  min-height: 100vh;
+}
+
+.budgeting-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100vw;
+  gap: 2rem;
+}
+
+.budgeting-form input {
+  width: 20%;
+  min-width: 300px;
+  height: 7vh;
+  border-radius: 10px;
+  border: black 2px solid;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.budgeting-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
+.budgeting-form input::placeholder {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.label-budgeting {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.main-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#asalKota {
+  width: 20%;
+  min-width: 300px;
+  height: 7vh;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  border: none;
+  font-size: 2rem;
+  appearance: none;
+  transition: all 0.3s ease;
+}
+
+#asalKota:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.rupiah-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: black 2px solid;
+}
+
+.rupiah-input span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 2rem;
+  pointer-events: none;
+}
+
+.button-hitung {
+  width: 20%;
+  min-width: 300px;
+  height: 7vh;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+}
+
+.button-hitung:hover {
+  background-color: #2980b9;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced Checkbox Button Styles */
+.budget-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  width: 53%;
+  /* max-width: 60vw; */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.budgeting-main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 90vh;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  align-items: start;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.budgeting-content1 {
+  position: relative; /* Diperlukan untuk positioning absolut anaknya */
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Mencegah scroll horizontal */
+}
+
+.budgeting-content1::before {
+  content: "";
+  position: absolute;
+  right: -20vw; /* Padding negatif ke kanan */
+  top: -40vh;
+  bottom: 0;
+  width: 90%; /* Sesuaikan lebar gambar */
+  background-image: url("../assets/images/budgeting.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  z-index: -1; /* Pastikan konten tetap di atas */
+}
+
+.button-budgeting {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  margin-left: 10rem;
+  gap: 2rem;
+}
+
+.budgeting-judul {
+  padding-left: 5rem;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: start !important;
+  align-items: start !important;
+}
+
+.category-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-item input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.category-item label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 2px solid #dee2e6;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  min-height: 120px;
+}
+
+.category-item label i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.category-item .checkbox-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Hover State */
+.category-item:hover label {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Checked State */
+.category-item input:checked + label {
+  background-color: var(--primary-color);
+  border-color: #2980b9;
+}
+
+.category-item input:checked + label i,
+.category-item input:checked + label .checkbox-text {
+  color: white;
+}
+
+/* Active State */
+.category-item input:active + label {
+  transform: scale(0.95);
+}
+
+/* Lainnya Button */
+.category-item-lainnya {
+  grid-column: 1 / -1;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.category-item-wrapper {
+  width: 100%;
+}
+
+.main-hasil {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.hasil-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hasil-uang-saku {
+  width: 100%;
+  max-width: 300px; /* Lebar maksimum */
+  margin: 2rem auto; /* Ini kunci utamanya */
+  padding: 0 20px; /* Padding untuk responsif */
+}
+
+.hasil-box {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  /* Pastikan parent memiliki lebar penuh */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hasil-box h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.hasil-box .jumlah {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.hasil-box .pesan {
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+/* Animasi saat update */
+.hasil-box.updated {
+  animation: fadeHighlight 1s ease;
+}
+
+.cek-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.cek-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.justify-text {
+  text-align: justify;
+  /* text-justify: inter-word; */
+}
+
+.button-hidden {
+  display: none;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.modal-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#addCustomCategory {
+  background-color: #4caf50;
+  color: white;
+}
+
+#confirmCategories {
+  background-color: #2196f3;
+  color: white;
+}
+
+#confirmCategories:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+#customCategoriesList {
+  margin-top: 20px;
+}
+
+.custom-category-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.custom-category-item button {
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Tambahkan di CSS */
+#doneButton {
+  margin-top: 15px;
+  padding: 8px 15px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#doneButton:hover {
+  background: #45a049;
+}
+
+@keyframes fadeHighlight {
+  0% {
+    background-color: var(--primary-light);
+  }
+  100% {
+    background-color: var(--primary-color);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .budgeting-content1 {
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .garis-bawah-budgeting {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .button-budgeting {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .button-buat,
+  .button-cek {
+    width: 60vw;
+    height: 12vh;
+  }
+
+  .budgeting-form input,
+  #asalKota,
+  .budgeting-form button {
+    width: 80%;
+    min-width: unset;
+  }
+
+  .budget-categories {
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+  }
+
+  .category-item-lainnya {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .budget-categories {
+    grid-template-columns: 1fr;
+  }
+
+  #judul1-budgeting {
+    font-size: 2.5rem;
+  }
+
+  #judul2-budgeting {
+    font-size: 1rem;
+  }
+
+  .div-button {
+    font-size: 1.8rem;
+  }
+
+  .category-item-lainnya {
+    width: 100%;
+  }
 }

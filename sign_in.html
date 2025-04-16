@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/sign_in.css">
     <link rel="stylesheet" href="style/navbar_style.css">
+    <link rel="stylesheet" href="style/login.css">
     
     <title>Login Page</title>
 </head>
@@ -27,22 +28,22 @@
                 </ul>
         </nav>
         <div class="login-container">
-            <div class="login-warapper">
+            <div class="login-wrapper">
                 <h1 class="judul_login" id="judul_login">Welcome!</h1>
                 <h3 class="judul_login" id="subjudul_login">Sign up your Account</h1>
                     <form action="home.html" method="post">
                         <div class="input-group">
                             <i class="fa fa-user"></i>
-                            <input type="text" name="username" id="username" placeholder="Username" required>
+                            <input type="text" name="username" class="username" placeholder="Username" required>
                         </div>
                         <div class="input-group">
                             <i class="fa fa-lock"></i>
-                            <input type="password" name="password" id="password" placeholder="Password" required>
+                            <input type="password" name="password" class="password" placeholder="Password" required>
                         </div>
                         <p>
                             <a href="#" class="linked_text">Forgot Password?</a>
                         </p> 
-                        <button type="submit" class="btn">Sign In</button>
+                        <button type="submit" class="btn-login">Sign In</button>
                     </form>
                     <p class="non_linked_text">Don’t have an account? <a href="sign_up.html" class="linked_text">Sign Up</a></p>   
                 </div>      

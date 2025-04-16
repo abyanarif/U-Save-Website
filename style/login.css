@@ -1,0 +1,113 @@
+#judul_login {
+  font-size: 70px;
+  margin-bottom: 5px;
+  font-weight: lighter;
+  line-height: 50px;
+}
+
+#subjudul_login {
+  font-size: 20px;
+  margin-top: 7px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.username,
+.password,
+.confirmPassword,
+.email {
+  align-items: center;
+  padding: 10px 15px;
+  width: 100%;
+  max-width: 300px;
+  font-family: "Montserrat", sans-serif;
+  color: white !important;
+  outline: none;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0);
+}
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  gap: 10px;
+  min-height: 50px;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+input {
+  color: white !important;
+}
+
+.input-group input {
+  padding: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  width: 80%;
+  border-radius: 20px;
+  border: white;
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.input-group:focus-within {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  caret-color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: white !important;
+  -webkit-background-clip: text !important;
+  background-color: transparent !important;
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: white;
+}
+
+/* Saat input aktif/fokus */
+input:focus {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+/* Untuk teks yang sudah terisi */
+input:not(:placeholder-shown) {
+  color: white !important;
+}
+
+@supports (-moz-appearance: none) {
+  input {
+    color: white !important;
+  }
+}
+
+.btn-login {
+  height: 50px;
+  width: 180px;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-login:hover {
+  background-color: var(--secondary-color);
+}

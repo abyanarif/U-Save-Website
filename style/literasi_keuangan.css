@@ -1,69 +1,575 @@
-.literasiContainer{
-    width : 100%;
-    margin: 0;
-    padding: 0;
+/* Global Styles */
+:root {
+  --primary-color: #15b7b9;
+  --text-color: white;
+  --font-main: "Montserrat", sans-serif;
 }
 
-.literasi_utama{
-    display: flex;
-    flex-direction: row;
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-.keteranganpage{
+/* Layout */
+.literasiContainer {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.literasi-keuangan-content1 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-top: 0px;
+}
+
+/* Main Content Row */
+.literasi_utama {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  margin-right: 100px;
+  margin-left: 150px;
+}
+
+/* Text Content */
+.judul-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+  margin-bottom: 180px;
+}
+
+.judul-literasi {
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+}
+
+#judul1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+#judul2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.garis-bawah {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  margin: 1.5rem 0;
+}
+
+.keterangan-literasi {
+  font-size: 3.125rem;
+  font-weight: 550;
+  color: white;
+  line-height: 1;
+  margin: 0.0625rem 0 1.25rem 0;
+}
+
+/* Image */
+.gambar-babi {
+  flex-shrink: 0;
+  width: 900px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Buttons */
+.button-container-literasi {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* .btn-literasi-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+} */
+
+.icon-literasi {
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+}
+
+.button-literasi-wrapper {
+  width: 220px;
+  height: 220px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 1.3rem;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.btn-literasi {
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-literasi:hover {
+  background-color: #105253;
+  transform: translateY(-50px);
+}
+
+/* Background Elements */
+.literasi-keuangan-content1::before {
+  content: "";
+  position: absolute;
+  background-image: url(../assets/images/element1.png);
+  width: 150%;
+  height: 150%;
+  background-repeat: no-repeat;
+  top: -150px;
+  left: -80px;
+  z-index: -1;
+}
+
+/* Style for each content section */
+#literasi,
+#tabungan,
+#investasi,
+#asuransi,
+#perencanaan {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  padding-top: 4rem;
+  text-decoration: none;
+}
+
+#literasi {
+  color: black;
+}
+
+.literasi-content-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.box-literasi {
+  height: 100%;
+  width: 30vh;
+  background-color: #15b7b9;
+  margin-left: -7rem;
+}
+
+.gambar-literasi {
+  width: 40vh;
+  height: auto;
+}
+
+div .div-gambar-literasi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -7rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 35vh;
+  height: 47vh;
+  border-radius: 20px;
+}
+
+.keterangan-content-literasi {
+  width: 70vw;
+  height: auto;
+  font-size: 2rem;
+  color: black;
+  line-height: 1;
+}
+
+.keterangan-content-literasi h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  /* width: 50%; */
+}
+
+.keterangan-content-literasi p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  width: 80%;
+  letter-spacing: 1px;
+  word-spacing: 0.5em;
+}
+
+.content-literasi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#tabungan {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: rgba(0, 0, 0, 0.7) url(../assets/images/tabungan.png);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.keterangan-content-tabungan {
+  width: 90vw;
+  height: auto;
+  font-size: 2rem;
+  color: white;
+  line-height: 1;
+  letter-spacing: 1px;
+  word-spacing: 0.5em;
+}
+
+.keterangan-content-tabungan h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.keterangan-content-tabungan p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.gambar-investasi {
+  width: 80vw;
+  height: auto;
+}
+
+.keterangan-content-investasi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  font-size: 2rem;
+  color: black;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.div-judul-investasi {
+  height: 20vh;
+  width: 60vw;
+  margin-top: -10vh;
+  display: flex;
+  background-color: rgba(255, 255, 255, 1);
+  justify-content: center;
+  align-items: center;
+}
+
+.keterangan-content-investasi p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+#asuransi {
+  width: 100vw;
+  height: auto;
+  background: url(../assets/images/asuransi.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.keterangan-content-asuransi {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100vw;
+  height: auto;
+  font-size: 2rem;
+  color: white;
+  text-shadow: black 1px 1px 2px;
+  line-height: 1;
+  letter-spacing: 1px;
+  word-spacing: 0.5em;
+  /* mix-blend-mode: difference; */
+}
+
+.keterangan-content-asuransi h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  width: 20%;
+  height: 10vh;
+  text-align: start;
+}
+
+.keterangan-content-asuransi p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+.content-perencanaan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.keterangan-content-perencanaan {
+  min-height: 100vh;
+  width: 97vw;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  padding-left: 20rem;
+  z-index: -1;
+}
+
+.gambar-perencanaan {
+  width: 80%;
+  height: auto;
+}
+
+.div-gambar-perencanaan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 25rem;
+  height: 40rem;
+  border-radius: 20px;
+  margin-right: -20rem;
+}
+
+ol.main-list {
+  counter-reset: item;
+  padding-left: 0;
+}
+
+ol.main-list > li {
+  display: block;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ol.main-list > li:before {
+  content: counter(item, lower-alpha) ".";
+  counter-increment: item;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #2c3e50;
+} */
+
+h3.judul-light {
+  color: #2c3e50;
+  margin-top: 0;
+  display: inline;
+}
+h3.judul-dark {
+  color: rgb(202, 202, 202);
+  margin-top: 0;
+  display: inline;
+}
+
+ul.paragraft {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ul.paragraft li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+  list-style-type: none;
+}
+
+ul.paragraft li:before {
+  content: "•";
+  color: #3498db;
+  position: absolute;
+  left: 0;
+  list-style-type: none;
+}
+
+.definition-light {
+  color: black;
+}
+
+.definition-dark {
+  color: white;
+}
+
+.font-kecil {
+  font-size: 1rem;
+}
+
+.font-sedang {
+  font-size: 2rem !important;
+}
+
+.font-besar {
+  font-size: 3rem;
+}
+
+.strong-light {
+  color: #000000;
+}
+
+strong.dark {
+  color: #000000;
+}
+
+.intro {
+  font-style: italic;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.formula {
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  margin: 10px 0;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #e0e0e0;
+  margin-top: 5px;
+}
+
+ol.tips {
+  padding-right: 3rem !important;
+}
+
+.section-title {
+  font-weight: bold;
+  color: #2c3e50;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.section-title-light {
+  color: #2c3e50;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.section-title-dark {
+  color: #e0e0e0;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* ol.main-list > li {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  padding: clamp(15px, 3vw, 20px);
+}
+
+.section-title {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+}
+
+ul.custom-list li {
+  font-size: clamp(1rem, 1.8vw, 1rem);
+  padding-left: clamp(15px, 3vw, 25px);
+} */
+
+@media (max-width: 1024px) {
+  .literasi_utama {
+    gap: 2rem;
+  }
+
+  .gambar-babi {
     width: 350px;
-    word-wrap: break-word; 
-    overflow-wrap: break-word; 
-    /* margin-top: 20px;
-    margin-left: 70px; */
-    font-family: Montserrat;
-    font-weight: 100;
-    color: #15B7B9;
-
+  }
 }
 
-#keteranganliterasi{
-    font-size: 50px;
-    margin-top: 1px;
-    /* margin-left: 20px; */
-    font-family: 'Montserrat';
-    font-weight: bold;  
-    color: #15B7B9; 
-    line-height: 1;
-    font-weight: 550;
-    margin-bottom: 20px;      
-}
-
-.btn-literasi{
-    height:100px;
-    width: 100px;
-    justify-content: center;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 20px 20px;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-}
-
-.button-container-literasi{
-    display: flex;
+@media (max-width: 768px) {
+  .literasi_utama {
     flex-direction: column;
     text-align: center;
-    justify-content: center;
-}
+  }
 
-.btn-literasi-atas{
-    padding-bottom: 60px;
-}
+  .judul-wrapper {
+    align-items: center;
+  }
 
-.bawah-judul{
+  .garis-bawah {
+    margin: 1.5rem auto;
+  }
+
+  #judul1 {
+    font-size: 3rem;
+  }
+
+  #judul2 {
+    font-size: 2rem;
+  }
+
+  .btn-literasi-atas,
+  .btn-literasi-bawah {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .btn-literasi {
     width: 100%;
-    padding-left: 7px;
-    line-height: 2;
+    max-width: 250px;
+  }
 }
-.namaBrand{
-    text-decoration: none;
+
+@media (max-width: 480px) {
+  #judul1 {
+    font-size: 2.5rem;
+  }
+
+  #judul2 {
+    font-size: 1.8rem;
+  }
+
+  #keteranganliterasi {
+    font-size: 2.5rem;
+  }
 }

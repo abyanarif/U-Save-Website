@@ -1,55 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Belajar Navbar</title>
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="/style/navbar_style.css">
-    <link rel="stylesheet" href="/style/literasi_keuangan.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Literasi Keuangan | U-Save</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/navbar_style.css" />
+    <link rel="stylesheet" href="style/literasi_keuangan.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Smooth scroll behavior */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body id="body_literasiKeuangan">
     <div class="literasiContainer">
-        <nav class="wrapper">
-            <a href="home.html" style="text-decoration: none;">
-                <div class="brand" >
-                    <img src="assets/images/logo.png" alt="logo" class="logo">
-                    <div class="namaBrand">U-Save</div>
-                </div>
-            </a>
-            <div class="menu-icon" id="menu-icon">
-                <i class="fa-solid fa-list"></i>
-            </div>
-                <ul class="navigation hidden" id="menu-list">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="literasi_keuangan.html"  class="active" id="activeText">Literasi Keuangan</a></li>
-                    <li><a href="budgeting.html">Budgeting</a></li>
-                </ul>
-        </nav>
-        <div class="literasi_utama">
-            <div class="main-wrapper">
-                <h1 class="judul" id="judul1">U-Save</h1>
-                <div class="bawah-judul">
-                    <h2 class="judul" id="judul2">University Save</h2>
+      <nav class="wrapper">
+        <a href="home.html" style="text-decoration: none">
+          <div class="brand">
+            <img src="assets/images/logo.png" alt="Logo U-Save" class="logo" />
+            <div class="namaBrand">U-Save</div>
+          </div>
+        </a>
+        <button class="menu-icon" id="menu-icon" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="navigation hidden" id="menu-list">
+          <li><a href="home.html">Home</a></li>
+          <li>
+            <a href="literasi_keuangan.html" class="active"
+              >Literasi Keuangan</a
+            >
+          </li>
+          <li><a href="budgeting.html">Budgeting</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+
+      <div class="literasi-content-sections">
+        <section class="literasi-keuangan-content1">
+          <main>
+            <div class="literasi_utama">
+              <div class="judul-wrapper">
+                <div class="judul-subWrapper">
+                  <h1 class="judul-literasi">U-SAVE</h1>
+                  <div class="bawah-judul">
+                    <h2 class="judul-literasi">University Save</h2>
                     <div class="garis-bawah"></div>
-                    <h3 class="keteranganpage" id="keteranganliterasi">Literasi Keuangan</h3>
+                    <h3 class="keterangan-literasi">Literasi<br />Keuangan</h3>
+                  </div>
                 </div>
+              </div>
+              <img
+                src="assets/images/babi.png"
+                alt="Ilustrasi Celengan"
+                class="gambar-babi"
+              />
             </div>
+
             <div class="button-container-literasi">
-                <div class="btn-literasi-atas">
-                    <a href="#" class="btn-literasi">Pengertian</a>
-                    <a href="#" class="btn-literasi">Tujuan</a>
-                    <a href="#" class="btn-literasi">Manfaat</a>
+              <a href="#literasi" class="btn-literasi">
+                <div class="button-literasi-wrapper">
+                  <img
+                    src="assets/images/icon-buku.png"
+                    alt="Pemahaman Dasar"
+                    class="icon-literasi"
+                  />
+                  <p>Pemahaman Dasar Keuangan Pribadi</p>
                 </div>
-                <div class="btn-literasi-bawah">
-                    <a href="#" class="btn-literasi">Dampak</a>
-                    <a href="#" class="btn-literasi">Mengatasi Dampak</a>
+              </a>
+
+              <a href="#tabungan" class="btn-literasi">
+                <div class="button-literasi-wrapper">
+                  <img
+                    src="assets/images/icon-celengan.png"
+                    alt="Tabungan"
+                    class="icon-literasi"
+                  />
+                  <p>Tabungan dan Pinjaman</p>
                 </div>
+              </a>
+
+              <a href="#investasi" class="btn-literasi">
+                <div class="button-literasi-wrapper">
+                  <img
+                    src="assets/images/icon-investasi.png"
+                    alt="Investasi"
+                    class="icon-literasi"
+                  />
+                  <p>Investasi</p>
+                </div>
+              </a>
+
+              <a href="#asuransi" class="btn-literasi">
+                <div class="button-literasi-wrapper">
+                  <img
+                    src="assets/images/icon-id_card.png"
+                    alt="Asuransi"
+                    class="icon-literasi"
+                  />
+                  <p>Asuransi</p>
+                </div>
+              </a>
+
+              <a href="#perencanaan" class="btn-literasi">
+                <div class="button-literasi-wrapper">
+                  <img
+                    src="assets/images/icon-kalender.png"
+                    alt="Perencanaan"
+                    class="icon-literasi"
+                  />
+                  <p>Perencanaan Keuangan Jangka Panjang</p>
+                </div>
+              </a>
             </div>
-        </div>
+          </main>
+        </section>
+
+        <section id="literasi" class="content-sections">
+          <main class="content-literasi">
+            <div class="box-literasi"></div>
+            <div class="div-gambar-literasi">
+              <img
+                class="gambar-literasi"
+                src="assets/images/pemahaman-dasar.png"
+                alt=""
+              />
+            </div>
+            <div class="keterangan-content-literasi">
+              <h1>Pemahaman Dasar Keuangan Pribadi</h1>
+              <div>
+                <ol class="main-list">
+                  <li>
+                    <h3 class="judul-light">Konsep Dasar Keuangan</h3>
+                    <ul class="paragraft">
+                      <li>
+                        <strong class="strong-light">Aset</strong>
+                        <span class="definition-light justify-text"
+                          >→ Semua sumber daya ekonomi yang dimiliki seseorang
+                          dan memberikan manfaat di masa depan, aset harus
+                          seimbang dengan total kewajiban dan ekuitas. Aset =
+                          kewajiban (utang) + ekuitas</span
+                        >
+                      </li>
+                      <li>
+                        <strong class="strong-light">Utang</strong>
+                        <span class="definition-light"
+                          >→ Kewajiban finansial yang harus dibayarkan kepada
+                          pihak peminjam</span
+                        >
+                      </li>
+                      <li>
+                        <strong class="strong-light">Ekuitas</strong>
+                        <span class="definition-light"
+                          >→ Modal pemilik, mencakup laba atau kerugian yang
+                          dihasilkan</span
+                        >
+                      </li>
+                      <li>
+                        <strong class="strong-light">Pendapatan</strong>
+                        <span class="definition-light"
+                          >→ Semua penerimaan yang diperoleh</span
+                        >
+                      </li>
+                      <li>
+                        <strong class="strong-light">Biaya</strong>
+                        <span class="definition-light"
+                          >→ Pengeluaran yang dikeluarkan untuk berbagai
+                          kebutuhan</span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3 class="judul-light">Pengelolaan Anggaran</h3>
+                    <p class="definition-light">
+                      Buat anggaran untuk memantau pemasukan dan pengeluaran
+                      serta memastikan pengeluaran tidak lebih besar daripada
+                      pemasukan.
+                    </p>
+                    <ul class="paragraft">
+                      <li>Hitung Pendapatan</li>
+                      <li>List Kebutuhan Bulanan</li>
+                      <li>Prioritaskan Kebutuhan Utama</li>
+                      <li>Persiapkan Tabungan, Investasi, dan Dana Darurat</li>
+                      <li>Kelola Hutang/Kredit dengan Bijak</li>
+                      <li>Evaluasi Anggaran Secara Berkala</li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </main>
+        </section>
+
+        <section id="tabungan" class="content-sections">
+          <!-- Konten tabungan di sini -->
+          <main class="content-tabungan">
+            <div class="keterangan-content-tabungan">
+              <h1>Tabungan dan Pinjaman</h1>
+              <ol class="main-list" style="font-size: 2rem">
+                <li>
+                  <h3 class="judul-dark">Tabungan</h3>
+                  <p class="definition-dark" style="font-size: 2rem">
+                    Menabung merupakan kebiasaan finansial yang sangat penting
+                    untuk keadaan darurat dan untuk mencapai sebuah tujuan
+                    finansial di masa depan
+                  </p>
+
+                  <p style="font-size: 2rem">Tips Menabung:</p>
+                  <ol class="tips">
+                    <li>Tetapkan tujuan menabung</li>
+                    <li>Buat anggaran bulanan</li>
+                    <li>Mulai dari jumlah kecil</li>
+                    <li>Kurangi perilaku konsumtif</li>
+                  </ol>
+                </li>
+
+                <li>
+                  <h3 class="judul-dark">Bunga Tabungan dan Pinjaman</h3>
+                  <p style="font-size: 2rem">
+                    Memahami bunga tabungan dan pinjaman
+                  </p>
+
+                  <ul>
+                    <li>
+                      <strong>Bunga Tabungan (Keuntungan untuk nasabah)</strong>
+                      <div class="formula">B = 100/b × t × M</div>
+                      <div>Total tabungan setelah bunga:</div>
+                      <div class="formula">T = M + B</div>
+                      <div class="note">
+                        Keterangan:<br />
+                        b = suku bunga (persentase)<br />
+                        t = periode waktu (bulan)<br />
+                        M = tabungan awal
+                      </div>
+                    </li>
+
+                    <li>
+                      <strong
+                        >Bunga Pinjaman (Keuntungan untuk pihak yang memberikan
+                        pinjaman)</strong
+                      >
+                      <div class="formula">B = 100/b × t × M</div>
+                      <div>Total yang harus dibayar:</div>
+                      <div class="formula">T = H + B</div>
+                      <div>Angsuran per bulan:</div>
+                      <div class="formula">A = T / t</div>
+                      <div class="note">
+                        b = suku bunga (persentase)<br />
+                        t = periode waktu (bulan)<br />
+                        M = tabungan awal
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <h3>Jenis Produk Perbankan</h3>
+                  <ul>
+                    <li>
+                      <strong>Tabungan</strong> → penyimpanan dan akumulasi dana
+                      di rekening tabungan
+                    </li>
+                    <li><strong>Kredit</strong> → peminjaman uang</li>
+                    <li>
+                      <strong>Deposito</strong> → simpanan yang penarikannya
+                      hanya dapat dilakukan pada waktu dan syarat tertentu
+                    </li>
+                    <li>
+                      <strong>Giro</strong> → simpanan yang dapat diambil kapan
+                      saja melalui warkat cek dan bilyet giro
+                    </li>
+                    <li>
+                      <strong>Pemindahan atau transfer uang</strong> → antar
+                      rekening
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </main>
+        </section>
+
+        <section id="investasi" class="content-sections">
+          <!-- Konten investasi di sini -->
+          <main class="content-investasi">
+            <div class="keterangan-content-investasi">
+              <img
+                class="gambar-investasi"
+                src="assets/images/investasi.png"
+                alt=""
+              />
+              <div class="div-judul-investasi">
+                <h1>Investasi</h1>
+              </div>
+              <div>
+                <ol
+                  class="main-list"
+                  style="
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                  "
+                >
+                  <li>
+                    <span class="section-title">Investasi</span>
+                    <p class="definition">
+                      adalah tindakan untuk mengalokasikan sejumlah sumber daya
+                      seperti uang, waktu, usaha ke dalam suatu aset atau proyek
+                      dengan harapan untuk mendapat keuntungan di masa depan
+                    </p>
+                  </li>
+
+                  <li>
+                    <span class="section-title">Tujuan</span>
+                    <ol class="sub-list">
+                      <li>Peningkatan nilai aset seiring waktu</li>
+                      <li>Pendapatan pasif</li>
+                      <li>Realisasi impian finansial</li>
+                      <li>Mengelola risiko keuangan</li>
+                    </ol>
+                  </li>
+
+                  <li>
+                    <span class="section-title">Jenis</span>
+                    <ol class="sub-list">
+                      <li>Saham (kepemilikan)</li>
+                      <li>Obligasi (surat utang)</li>
+                      <li>Reksa dana (beberapa investor)</li>
+                      <li>Real estat (rumah, tanah)</li>
+                      <li>Komoditas (minyak, emas)</li>
+                      <li>Forex (Mata uang asing)</li>
+                      <li>Bisnis Startup</li>
+                    </ol>
+                  </li>
+
+                  <li>
+                    <span class="section-title">Manajemen Risiko</span>
+                    <ol class="sub-list">
+                      <li>Tetapkan target</li>
+                      <li>Diversifikasi Portofolio</li>
+                      <li>DCA (berkala)</li>
+                      <li>Waspada penipuan</li>
+                      <li>Pengetahuan dan riset</li>
+                      <li>Gunakan stop loss (turun–jual)</li>
+                    </ol>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </main>
+        </section>
+
+        <section id="asuransi" class="content-sections">
+          <main class="content-asuransi">
+            <div class="keterangan-content-asuransi">
+              <h1>Asuransi</h1>
+              <div>
+                <ol class="main-list">
+                  <li>
+                    <span class="section-title-dark">Fungsi</span>
+                    <p class="definition-dark font-sedang">
+                      Melindungi kehidupan, aset, dan memberikan keamanan
+                      finansial jangka panjang dalam menghadapi kejadian tak
+                      terduga seperti kecelakaan atau penyakit berat
+                    </p>
+                  </li>
+
+                  <li>
+                    <span class="section-title-dark font-sedang">Jenis</span>
+                    <ul class="custom-list">
+                      <li>Kesehatan <span class="vertical-line"></span></li>
+                      <li>Jiwa</li>
+                      <li>Kendaraan</li>
+                      <li>Pensiun</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <span class="section-title-dark font-sedang">Manfaat</span>
+                    <ul class="custom-list">
+                      <li>Perlindungan finansial</li>
+                      <li>Akses Layanan Kesehatan</li>
+                      <li>Persiapan Masa Depan</li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </main>
+        </section>
+
+        <section id="perencanaan" class="content-sections">
+          <!-- Konten perencanaan di sini -->
+          <main class="content-perencanaan">
+            <div class="div-gambar-perencanaan">
+              <img
+                src="assets/images/perencanaan.png"
+                alt=""
+                class="gambar-perencanaan"
+              />
+            </div>
+            <div class="keterangan-content-perencanaan">
+              <h1>Perencanaan Keuangan Jangka Panjang</h1>
+              <div>
+                <ol class="main-list">
+                  <li>
+                    <span class="section-title">Tujuan</span>
+                    <ul class="custom-list">
+                      <li>Mencapai Kemandirian Finansial</li>
+                      <li>Persiapan Masa Pensiun</li>
+                      <li>Pembelian Aset Besar</li>
+                      <li>Menghadapi Hal Tak Terduga</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <span class="section-title">Langkah-langkah</span>
+                    <ul class="custom-list">
+                      <li>Hitung dan Catat Pendapatan</li>
+                      <li>Buat Anggaran Belanja</li>
+                      <li>Tentukan Prioritas Keuangan</li>
+                      <li>Catat Pengeluaran</li>
+                      <li>Siapkan Dana Darurat</li>
+                      <li>Pisahkan Tabungan dan Dana Investasi</li>
+                      <li>Sisihkan Dana Asuransi</li>
+                      <li>
+                        Metode 3 Pos (50% kebutuhan pokok, 20% tabungan, 30%
+                        gaya hidup)
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <span class="section-title">Dana Darurat</span>
+                    <p class="definition">
+                      Simpanan yang digunakan untuk kebutuhan tidak terduga di
+                      masa depan.
+                    </p>
+
+                    <div class="note-box">
+                      <div class="note-title">Ideal minimum dana darurat:</div>
+                      <div>Belum menikah (3-4 kali pengeluaran bulanan)</div>
+                    </div>
+
+                    <p>Mempersiapkan dana darurat:</p>
+                    <ul class="custom-list">
+                      <li>Hitung Kebutuhan Bulanan</li>
+                      <li>Mulai dari Jumlah Kecil</li>
+                      <li>Otomatisasi Penyimpanan</li>
+                      <li>Manfaatkan Pendapatan Tambahan</li>
+                      <li>Kurangi Perilaku Konsumtif</li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </main>
+        </section>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
