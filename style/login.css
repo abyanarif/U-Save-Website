@@ -22,7 +22,7 @@
   width: 100%;
   max-width: 300px;
   font-family: "Montserrat", sans-serif;
-  color: white;
+  color: white !important;
   outline: none;
   justify-content: center;
   background: rgba(255, 255, 255, 0);
@@ -38,6 +38,11 @@
   border-radius: 20px;
   gap: 10px;
   min-height: 50px;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+input {
+  color: white !important;
 }
 
 .input-group input {
@@ -56,6 +61,35 @@
 
 .input-group input::placeholder {
   color: rgba(255, 255, 255, 0.7);
+  caret-color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: white !important;
+  -webkit-background-clip: text !important;
+  background-color: transparent !important;
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: white;
+}
+
+/* Saat input aktif/fokus */
+input:focus {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+/* Untuk teks yang sudah terisi */
+input:not(:placeholder-shown) {
+  color: white !important;
+}
+
+@supports (-moz-appearance: none) {
+  input {
+    color: white !important;
+  }
 }
 
 .btn-login {

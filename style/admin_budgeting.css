@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  width: 280px;
+}
+
+.sidebar .nav-link {
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: all 0.2s;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #e9ecef;
+}
+
+.sidebar .nav-link.active {
+  background-color: #0d6efd;
+  color: white !important;
+}
+
+.sidebar .logo {
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Main Content Styles */
+.main-content {
+  margin-left: 280px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  min-height: 100vh;
+}
+
+/* Budgeting Card Styles - Mirip dengan Literasi Keuangan */
+.budgeting-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: none;
+  color: #212529;
+}
+
+.budgeting-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.budgeting-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.budgeting-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+.budgeting-desc {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .sidebar {
+    width: 250px;
+    transform: translateX(-250px);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .budgeting-icon {
+    font-size: 2rem;
+  }
+
+  .budgeting-title {
+    font-size: 1.1rem;
+  }
+}

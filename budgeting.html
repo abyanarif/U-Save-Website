@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/style.css" />
     <link
       rel="stylesheet"
-      href="style/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style/navbar_style.css" />
     <link rel="stylesheet" href="style/budgeting.css" />
@@ -33,15 +33,266 @@
           <li><a href="profile.html">Profile</a></li>
         </ul>
       </nav>
-      <div class="budgeting-wrapper">
-        <h1 class="judul-budgeting" id="judul1-budgeting">U-SAVE</h1>
-        <p class="judul-budgeting" id="judul2-budgeting">University Save</p>
-        <p></p>
-        <div class="garis-bawah-budgeting"></div>
-        <h2>Budgeting</h2>
-        <h2>Otomatis</h2>
+      <div class="budgeting-content-sections">
+        <section class="budgeting-content1">
+          <main class="budgeting-main">
+            <div class="budgeting-judul">
+              <h1 class="judul-budgeting" id="judul1-budgeting">U-SAVE</h1>
+              <p class="judul-budgeting" id="judul2-budgeting">
+                University Save
+              </p>
+              <p></p>
+              <div class="garis-bawah-budgeting"></div>
+              <h2>Budgeting</h2>
+              <h2>Otomatis</h2>
+            </div>
+            <div class="button-budgeting">
+              <a href="#buat" class="button-buat"
+                ><div class="div-button">Buat</div></a
+              >
+              <a href="#cek" class="button-cek"
+                ><div class="div-button">Cek</div></a
+              >
+            </div>
+          </main>
+        </section>
+        <section class="budgeting-content-buat" id="buat">
+          <main class="main-input">
+            <h1 class="label-budgeting">Isi Disini</h1>
+            <form action="" class="budgeting-form">
+              <input type="text" placeholder="Uang Saku" class="rupiah-input" />
+
+              <div class="form-group">
+                <label for="asalKota">Asal Kota:</label>
+                <select
+                  id="asalKota"
+                  name="asalKota"
+                  class="scrollable"
+                  required
+                >
+                  <option value="">-- Pilih Kota --</option>
+                  <option value="Surabaya">Surabaya</option>
+                  <option value="Malang">Malang</option>
+                  <option value="Kediri">Kediri</option>
+                  <option value="Madiun">Madiun</option>
+                  <option value="Pasuruan">Pasuruan</option>
+                  <option value="Probolinggo">Probolinggo</option>
+                  <option value="Blitar">Blitar</option>
+                  <option value="Mojokerto">Mojokerto</option>
+                  <option value="Jember">Jember</option>
+                  <option value="Banyuwangi">Banyuwangi</option>
+                  <option value="Batu">Batu</option>
+                  <option value="Lumajang">Lumajang</option>
+                  <option value="Sidoarjo">Sidoarjo</option>
+                  <option value="Tulungagung">Tulungagung</option>
+                  <option value="Trenggalek">Trenggalek</option>
+                  <option value="Ponorogo">Ponorogo</option>
+                  <option value="Nganjuk">Nganjuk</option>
+                  <option value="Ngawi">Ngawi</option>
+                  <option value="Magetan">Magetan</option>
+                  <option value="Pacitan">Pacitan</option>
+                  <option value="Bojonegoro">Bojonegoro</option>
+                  <option value="Tuban">Tuban</option>
+                  <option value="Lamongan">Lamongan</option>
+                  <option value="Gresik">Gresik</option>
+                  <option value="Bangil">Bangil</option>
+                  <option value="Kepanjen">Kepanjen</option>
+                  <option value="Lainnya">Lainnya (Jawa Timur)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Alokasikan untuk:</label>
+                <div class="category-item-wrapper">
+                  <div class="budget-categories">
+                    <div class="category-item">
+                      <input
+                        type="checkbox"
+                        id="kos"
+                        name="budgetCategory"
+                        value="kos"
+                      />
+                      <label for="kos">
+                        <i class="fas fa-home"></i>
+                        <span class="checkbox-text">Kos/Akomodasi</span>
+                      </label>
+                    </div>
+
+                    <!-- Makan -->
+                    <div class="category-item">
+                      <input
+                        type="checkbox"
+                        id="makan"
+                        name="budgetCategory"
+                        value="makan"
+                      />
+                      <label for="makan">
+                        <i class="fas fa-utensils"></i>
+                        <span class="checkbox-text">Makan</span>
+                      </label>
+                    </div>
+                    <!-- Hiburan -->
+                    <div class="category-item">
+                      <input
+                        type="checkbox"
+                        id="hiburan"
+                        name="budgetCategory"
+                        value="hiburan"
+                      />
+                      <label for="hiburan">
+                        <i class="fas fa-gamepad"></i>
+                        <span class="checkbox-text">Hiburan</span>
+                      </label>
+                    </div>
+
+                    <!-- Internet -->
+                    <div class="category-item">
+                      <input
+                        type="checkbox"
+                        id="internet"
+                        name="budgetCategory"
+                        value="internet"
+                      />
+                      <label for="internet">
+                        <i class="fas fa-wifi"></i>
+                        <span class="checkbox-text">Internet</span>
+                      </label>
+                    </div>
+
+                    <!-- Dana Darurat -->
+                    <div class="category-item">
+                      <input
+                        type="checkbox"
+                        id="darurat"
+                        name="budgetCategory"
+                        value="darurat"
+                      />
+                      <label for="darurat">
+                        <i class="fas fa-first-aid"></i>
+                        <span class="checkbox-text">Dana Darurat</span>
+                      </label>
+                    </div>
+
+                    <!-- Lainnya -->
+                    <div class="category-item category-item-lainnya">
+                      <input
+                        type="checkbox"
+                        id="lainnya"
+                        name="budgetCategory"
+                        value="lainnya"
+                      />
+                      <label for="lainnya">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <span class="checkbox-text">Lainnya</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Custom Category Modal -->
+              <div id="customCategoryModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h3>Tambah Kebutuhan Lainnya</h3>
+                  <form id="customCategoryForm" onsubmit="return false;">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        id="customCategoryName"
+                        placeholder="Nama Kebutuhan"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="number"
+                        id="customCategoryAmount"
+                        placeholder="Nominal (Rp)"
+                        required
+                      />
+                    </div>
+                    <div class="modal-buttons">
+                      <button type="submit" id="addCustomCategory">
+                        Tambahkan
+                      </button>
+                      <button type="button" id="confirmCategories">
+                        Konfirmasi
+                      </button>
+                    </div>
+                  </form>
+                  <div id="customCategoriesList"></div>
+                </div>
+              </div>
+
+              <a href="#cek">
+                <button
+                  type="button"
+                  onclick="hitungAnggaran()"
+                  class="button-hitung"
+                >
+                  Hitung Anggaran
+                </button>
+              </a>
+            </form>
+          </main>
+        </section>
+        <section class="budgeting-content-cek" id="cek">
+          <main class="main-hasil">
+            <h1 class="label-budgeting">Cek</h1>
+            <div class="cek-container">
+              <div class="cek-wrapper">
+                <div class="hasil-container" id="hasilUangSaku">
+                  <div class="hasil-box" id="uang-saku">
+                    <h3 class="hasil-title">Uang Saku Anda</h3>
+                    <div class="hasil-amount">
+                      Rp <span id="tampilJumlah">0</span>
+                    </div>
+                    <p class="hasil-pesan">Silakan masukkan jumlah</p>
+                  </div>
+                  <div class="hasil-box" id="uang-makan">
+                    <h3 class="hasil-title">Budeget Makan Sebulan</h3>
+                    <div class="hasil-amount">
+                      Rp <span id="tampilJumlah">0</span>
+                    </div>
+                    <p class="hasil-pesan">Silakan masukkan jumlah</p>
+                  </div>
+                  <div class="hasil-box" id="uang-tempat-tinggal">
+                    <h3 class="hasil-title">Tempat Tinggal</h3>
+                    <div class="hasil-amount">
+                      Rp <span id="tampilJumlah">0</span>
+                    </div>
+                    <p class="hasil-pesan">Silakan masukkan jumlah</p>
+                  </div>
+                </div>
+                <div class="hasil-container">
+                  <div class="hasil-box" id="uang-internet">
+                    <h3 class="hasil-title">Budget Internet</h3>
+                    <div class="hasil-amount">
+                      Rp <span id="tampilJumlah">0</span>
+                    </div>
+                    <p class="hasil-pesan">Silakan masukkan jumlah</p>
+                  </div>
+                  <div class="hasil-box" id="uang-hiburan">
+                    <h3 class="hasil-title">Hiburan Perbulan</h3>
+                    <div class="hasil-amount">
+                      Rp <span id="tampilJumlah">0</span>
+                    </div>
+                    <p class="hasil-pesan">Silakan masukkan jumlah</p>
+                  </div>
+                  <div class="hasil-box" id="dana-darurat">
+                    <h3 class="hasil-title">Dana Darurat Perbulan</h3>
+                    <div class="hasil-amount">
+                      Rp <span id="tampilJumlah">0</span>
+                    </div>
+                    <p class="hasil-pesan">Silakan masukkan jumlah</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </section>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script/budgeting.js"></script>
   </body>
 </html>
